@@ -10,11 +10,7 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
   - Transfer Dodo Coins between users
 
 - **Arcade Games**
-  - Rock, Paper, Scissors
-  - Hangman
   - Tic-Tac-Toe
-  - Trivia Quiz
-  - And more!
 
 ## Commands
 
@@ -27,10 +23,7 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
 
 ### Game Commands
 
-- `/rps` - Play Rock, Paper, Scissors
-- `/hangman` - Play Hangman
-- `/tictactoe` - Play Tic-Tac-Toe
-- `/trivia` - Play Trivia Quiz
+- `/start-tictactoe @opponent <bet>` - Start a Tic-Tac-Toe game with an opponent and bet a specified amount of Dodo Coins.
 
 ## Setup
 
@@ -47,6 +40,7 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
    ```bash
    git clone https://github.com/yourusername/Dodo-Arcade-Bot.git
    cd Dodo-Arcade-Bot
+
    ```
 
 2. **Install dependencies**
