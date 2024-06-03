@@ -3,7 +3,7 @@ const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { v4: uuidv4 } = require('uuid');  // Add this line to import UUID generator
 const TicTacToe = require('../games/tictactoe');
 const User = require('../models/User');
-const Game = require('../models/Game');
+const Game = require('../models/TicTacToe');
 
 module.exports = {
     data: new SlashCommandBuilder()

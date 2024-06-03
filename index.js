@@ -7,7 +7,10 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
 const User = require('./models/User');
-const Game = require('./models/Game');  // Correct import
+const TicTacToe = require('./models/TicTacToe');
+const Blackjack = require('./models/Blackjack');
+const TicTacToeGame = require('./games/tictactoe');
+const BlackjackGame = require('./games/blackjack');
 
 // Create a new client instance
 const client = new Client({
@@ -61,7 +64,7 @@ client.on('interactionCreate', async interaction => {
         const [action, gameId, position] = interaction.customId.split('_');
         if (action === 'tictactoe') {
             const playerId = interaction.user.id;
-            const game = await Game.findOne({ gameId });
+            const game = await TicTacToe.findOne({ gameId });
 
             if (!game) {
                 await interaction.reply({ content: 'You are not currently in a Tic-Tac-Toe game.', ephemeral: true });
@@ -154,6 +157,14 @@ client.on('interactionCreate', async interaction => {
                     components: boardButtons,
                 });
             }
+        } else if (['hit', 'stand', 'double'].includes(action)) {
+            const game = await Blackjack.findOne({ gameId });
+            if (!game) {
+                await interaction.reply({ content: 'Game not found.', ephemeral: true });
+                return;
+            }
+            const blackjack = new BlackjackGame(game);
+            await blackjack.handleAction(interaction, action);
         }
     }
 });
