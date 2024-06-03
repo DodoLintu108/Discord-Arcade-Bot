@@ -16,8 +16,8 @@ module.exports = {
                 { name: '/help', value: 'Displays this help message' },
                 { name: '/balance', value: 'Check your Dodo Coin balance' },
                 { name: '/daily', value: 'Receive your daily Dodo Coins' },
-                { name: '/transfer', value: 'Transfer Dodo Coins to another user\nUsage: /transfer @user amount' }
-                // Add more commands as you implement them
+                { name: '/transfer', value: 'Transfer Dodo Coins to another user\nUsage: /transfer @user amount' },
+                { name: '/start-tictactoe', value: 'Start a Tic-Tac-Toe game with a bet\nUsage: /start-tictactoe @opponent bet' }
             )
             .setFooter({ text: 'Dodo Arcade Bot', iconURL: 'https://www.dropbox.com/scl/fi/yh0olm8gm0r0hns90fz63/DodoBotBanner.jpg?rlkey=0zr5736buj1087uhu7xsbx0s6&st=wcsexv0x&dl=0' }); // Replace with your bot's icon URL
 
