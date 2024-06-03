@@ -11,6 +11,7 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
 
 - **Arcade Games**
   - Tic-Tac-Toe
+  - BlackJack
 
 ## Commands
 
@@ -112,6 +113,10 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
 - **Play Tic-Tac-Toe**
   ```bash
   /start-tictactoe @opponent <bet>
+  ```
+- **Play BlackJack**
+  ```bash
+  /start-blackjack
   ```
 
 ## Contributing
