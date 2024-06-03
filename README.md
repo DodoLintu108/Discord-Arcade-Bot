@@ -108,10 +108,11 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
   ```bash
   /transfer @user amount
   ```
-
-- **Play Games**
-
-  Use the game commands like `/rps`, `/hangman`, `/tictactoe`, and `/trivia` to play games with the bot.
+  
+- **Play Tic-Tac-Toe**
+  ```bash
+  /start-tictactoe @opponent <bet>
+  ```
 
 ## Contributing
 
