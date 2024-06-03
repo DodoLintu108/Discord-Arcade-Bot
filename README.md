@@ -116,7 +116,7 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
   ```
 - **Play BlackJack**
   ```bash
-  /start-blackjack
+  '/start-blackjack <betAmount>'
   ```
 
 ## Contributing
