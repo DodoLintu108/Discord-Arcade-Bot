@@ -25,7 +25,7 @@ Dodo Arcade Bot is a fun and interactive Discord bot that provides a variety of 
 ### Game Commands
 
 - `/start-tictactoe @opponent <bet>` - Start a Tic-Tac-Toe game with an opponent and bet a specified amount of Dodo Coins.
--'  /start-blackjack <betAmount>' -Start a Blackjack game with DodoBot and bet a specified amount of Dodo Coins
+- `/start-blackjack <betAmount>` -Start a Blackjack game with DodoBot and bet a specified amount of Dodo Coins
 ## Setup
 
 ### Prerequisites
